@@ -39,7 +39,8 @@ app.post("/saludos", function(req, res) {
 });
 
 app.get("/", function(req, res) {
-    res.send("Hola Pianola!");
+    // res.send("Hola Pianola!");
+    res.sendfile('index.html');
 });
 
 app.listen(3000, () => {
